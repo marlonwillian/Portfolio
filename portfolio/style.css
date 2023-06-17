@@ -1,0 +1,99 @@
+/* responsividade antes de continuar  */
+
+body {
+    font-family: Helvetica, Arial;
+
+    margin: auto;
+    background-color: rgb(47, 61, 74);
+}
+
+header {
+    margin: auto;
+}
+
+header > nav#modo {
+    position: absolute;
+    text-align: left;
+
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+header > nav#menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: larger;
+
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 650px) {
+    header > nav#menu {
+        left: 35%;
+        transform: translateX(-35%);
+    }
+
+    header > nav#redes_sociais {
+        padding-right: 5px;
+    }
+}
+
+header > nav#redes_sociais {
+    text-align: right;
+
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+nav#modo > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+nav#menu > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+    padding: 5px;
+    transition-duration: 0.5s;
+}
+
+nav#redes_sociais > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+nav#modo > a:hover {
+    text-decoration: overline;
+    text-decoration-color: rgb(94, 108, 125);
+    
+    margin: 10px;
+}
+
+nav#menu > a:hover {
+    text-decoration: overline;
+    text-decoration-color: rgb(94, 108, 125);
+    
+    margin: 10px;
+}
+
+nav#redes_sociais > a:hover {
+    text-decoration: overline;
+    text-decoration-color: rgb(94, 108, 125);
+    
+    margin: 10px;
+}
