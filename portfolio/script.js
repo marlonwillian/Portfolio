@@ -1,13 +1,10 @@
 let menu = document.getElementById("menu")
-
-if (window.innerWidth > '536') {
-    menu.style.display = 'block'
-}
+let mobile_menu = document.getElementById("mobile_menu")
 
 function clickMenu() {
-    if (menu.style.display == 'grid') {
-        menu.style.display = 'none'
+    if (menu_mobile.style.display == 'grid') {
+        menu_mobile.style.display = 'none'
     } else {
-        menu.style.display = 'grid'
+        menu_mobile.style.display = 'grid'
     }
 }
