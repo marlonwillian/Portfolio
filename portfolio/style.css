@@ -4,7 +4,7 @@ body {
     font-family: Helvetica, Arial;
 
     margin: auto;
-    background-color: rgb(47, 61, 74);
+    background-color: rgb(17, 38, 57);
 }
 
 header {
@@ -21,6 +21,7 @@ header > nav#modo {
 }
 
 header > nav#menu {
+    display: block;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -31,32 +32,27 @@ header > nav#menu {
     padding-bottom: 10px;
 }
 
-@media (max-width: 650px) {
-    header > nav#menu {
-        left: 35%;
-        transform: translateX(-35%);
-    }
+header > i#hamb {
+    display: none;
 
-    header > nav#redes_sociais {
-        padding-right: 5px;
-    }
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 header > nav#redes_sociais {
     text-align: right;
 
+    margin: auto;
     padding-right: 25px;
     padding-top: 15px;
     padding-bottom: 10px;
 }
 
 nav#modo > a {
-    text-decoration: none;
-    font-weight: bold;
+    border-radius: 30px;
     color: white;
 
     padding: 10px;
-    transition-duration: 0.5s;
 }
 
 nav#menu > a {
@@ -69,19 +65,17 @@ nav#menu > a {
 }
 
 nav#redes_sociais > a {
-    text-decoration: none;
-    font-weight: bold;
     color: white;
 
-    padding: 10px;
+    padding: 5px;
     transition-duration: 0.5s;
 }
 
 nav#modo > a:hover {
-    text-decoration: overline;
-    text-decoration-color: rgb(94, 108, 125);
+    color: rgb(17, 38, 57);
+    background-color: white;
     
-    margin: 10px;
+    transition-duration: 0.5s;
 }
 
 nav#menu > a:hover {
@@ -96,4 +90,32 @@ nav#redes_sociais > a:hover {
     text-decoration-color: rgb(94, 108, 125);
     
     margin: 10px;
+}
+
+@media (max-width: 535px) {
+    header > nav#menu{
+        display: none;
+        top: 5%;
+    }
+
+    header > i#hamb {
+        display: block;
+        
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: 25px;
+    }
+
+    header > nav#redes_sociais {
+        padding-right: 0px;
+    }
+
+    header > nav#modo {
+        padding-left: 0px;
+    }
+
+    header > nav#redes_sociais > a {
+        padding: 3px;
+    }
 }
