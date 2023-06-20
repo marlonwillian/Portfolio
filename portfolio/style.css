@@ -1,23 +1,22 @@
-/* responsividade antes de continuar  */
-
 body {
     font-family: Helvetica, Arial;
     color: white;
     background-color: rgb(17, 38, 57);
 
     margin: auto;
-    min-width: 250px
 }
 
 header {
     margin: auto;
+
+    min-width: 300px;
 }
 
 header > nav#modo {
     position: absolute;
     text-align: left;
 
-    padding-left: 25px;
+    padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 10px;
 }
@@ -69,7 +68,7 @@ header > nav#c_redes_sociais {
     text-align: right;
 
     margin: auto;
-    padding-right: 25px;
+    padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 10px;
 }
@@ -77,8 +76,8 @@ header > nav#c_redes_sociais {
 header > nav#e_redes_sociais {
     text-align: right;
 
-    margin: auto;
-    padding-right: 25px;
+    margin: 3px;
+    padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 10px;
 }
@@ -163,13 +162,20 @@ nav#e_redes_sociais > a:hover {
     margin: 10px;
 }
 
-@media (min-width: 536px) {
+@media (max-width: 571px) {
+    header > nav#menu{
+        left: 40%;
+        transform: translateX(-40%);
+    }
+}
+
+@media (min-width: 540px) {
     header > nav#menu_mobile > a{
         display: none;
     }
 }
 
-@media (max-width: 535px) {
+@media (max-width: 538px) {
     header > nav#menu{
         display: none;
     }
@@ -205,5 +211,12 @@ nav#e_redes_sociais > a:hover {
 
     header > nav#modo {
         padding-left: 0px;
+    }
+}
+
+@media (max-width: 300px) {
+    header > #hamb{
+        left: 0%;
+        transform: translateX(0%);
     }
 }
