@@ -16,7 +16,14 @@ let m_sobre = document.getElementById("m_sobre")
 let m_projetos = document.getElementById("m_projetos")
 
 let c_sociais = document.getElementById("c_redes_sociais")
+let c_github = document.getElementById("c_github")
+let c_linkedin = document.getElementById("c_linkedin")
+let c_insta = document.getElementById("c_insta")
+
 let e_sociais = document.getElementById("e_redes_sociais")
+let e_github = document.getElementById("e_github")
+let e_linkedin = document.getElementById("e_linkedin")
+let e_insta = document.getElementById("e_insta")
 
 function clickMenu() {
     if (menu_mobile.style.display == 'grid') {
@@ -40,8 +47,13 @@ function modoClaro() {
     m_projetos.style.color = 'rgb(17, 38, 57)'
 
     c_sociais.style.display = "none"
+
     e_sociais.style.display = "block"
 
+    e_github.href = "https://www.github.com/marlonwillian"
+    e_linkedin.href = "https://www.linkedin.com/in/marlon-willian-silva-barros-30b49122b/"
+    e_insta.href = "https://www.instagram.com/mwbrrs/"
+    
     claro.style.display = "none"
     escuro.style.display = "block"
 }
@@ -60,6 +72,7 @@ function modoEscuro() {
     m_projetos.style.color = 'white'
 
     c_sociais.style.display = "block"
+    
     e_sociais.style.display = "none"
 
     escuro.style.display = "none"
