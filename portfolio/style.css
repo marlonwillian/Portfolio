@@ -18,8 +18,18 @@ header > nav#modo {
     text-align: left;
 
     padding-left: 25px;
-    padding-top: 15px;
+    padding-top: 5px;
     padding-bottom: 10px;
+}
+
+nav#modo > a#claro {
+    display: block;
+}
+
+nav#modo > a#escuro {
+    display: none;
+
+    color: rgb(17, 38, 57);
 }
 
 header > nav#menu {
@@ -64,9 +74,18 @@ header > nav#c_redes_sociais {
     padding-bottom: 10px;
 }
 
-nav#modo > a {
-    border-radius: 30px;
+header > nav#e_redes_sociais {
+    text-align: right;
 
+    margin: auto;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+nav#modo > a {
+    border-radius: 5px;
+    
     padding: 10px;
 }
 
@@ -95,9 +114,23 @@ nav#c_redes_sociais > a {
     transition-duration: 0.5s;
 }
 
-nav#modo > a:hover {
+nav#e_redes_sociais > a {
+    color: white;
+
+    padding: 5px;
+    transition-duration: 0.5s;
+}
+
+nav#modo > a#claro:hover {
     color: rgb(17, 38, 57);
     background-color: white;
+    
+    transition-duration: 0.5s;
+}
+
+nav#modo > a#escuro:hover {
+    color: white;
+    background-color: rgb(17, 38, 57);
     
     transition-duration: 0.5s;
 }
@@ -117,6 +150,13 @@ nav#menu_mobile > a:hover {
 }
 
 nav#c_redes_sociais > a:hover {
+    text-decoration: overline;
+    text-decoration-color: rgb(94, 108, 125);
+    
+    margin: 10px;
+}
+
+nav#e_redes_sociais > a:hover {
     text-decoration: overline;
     text-decoration-color: rgb(94, 108, 125);
     
@@ -151,11 +191,19 @@ nav#c_redes_sociais > a:hover {
         padding-right: 0px;
     }
 
-    header > nav#modo {
-        padding-left: 0px;
-    }
-
     header > nav#c_redes_sociais > a {
         padding: 3px;
+    }
+
+    header > nav#e_redes_sociais {
+        padding-right: 0px;
+    }
+
+    header > nav#e_redes_sociais > a {
+        padding: 3px;
+    }
+
+    header > nav#modo {
+        padding-left: 0px;
     }
 }
