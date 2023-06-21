@@ -1,4 +1,5 @@
 let body = document.getElementById("body")
+let nome = document.getElementById("nome")
 
 let escuro = document.getElementById("escuro")
 let claro = document.getElementById("claro")
@@ -35,6 +36,7 @@ function clickMenu() {
 
 function modoClaro() {
     body.style.backgroundColor = 'white'
+    nome.style.color = "rgb(17, 38, 57)"
 
     inicio.style.color = 'rgb(17, 38, 57)'
     sobre.style.color = 'rgb(17, 38, 57)'
@@ -60,6 +62,7 @@ function modoClaro() {
 
 function modoEscuro() {
     body.style.backgroundColor = 'rgb(17, 38, 57)'
+    nome.style.color = "white"
 
     inicio.style.color = 'white'
     sobre.style.color = 'white'
