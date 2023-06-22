@@ -1,5 +1,7 @@
 let body = document.getElementById("body")
 let nome = document.getElementById("nome")
+let subtitulo = document.getElementById("subtitulo")
+let tecnologias = document.getElementById("tecnologias")
 
 let escuro = document.getElementById("escuro")
 let claro = document.getElementById("claro")
@@ -35,8 +37,10 @@ function clickMenu() {
 }
 
 function modoClaro() {
-    body.style.backgroundColor = 'white'
+    body.style.backgroundColor = 'rgb(209, 209, 209)'
     nome.style.color = "rgb(17, 38, 57)"
+    subtitulo.style.color = "rgb(17, 38, 57)"
+    tecnologias.style.color = "rgb(17, 38, 57)"
 
     inicio.style.color = 'rgb(17, 38, 57)'
     sobre.style.color = 'rgb(17, 38, 57)'
@@ -63,6 +67,8 @@ function modoClaro() {
 function modoEscuro() {
     body.style.backgroundColor = 'rgb(17, 38, 57)'
     nome.style.color = "white"
+    subtitulo.style.color = "white"
+    tecnologias.style.color = "white"
 
     inicio.style.color = 'white'
     sobre.style.color = 'white'
