@@ -14,15 +14,20 @@ header {
 
 div#nome {
     position: fixed;
-    bottom: 45%;
+    margin: auto;
+
+    padding: 20px;
+    bottom: 49%;
     left: 50%;
     transform: translateX(-50%);
 
-    font-size: 250%;
+    font-size: 174%;
 }
 
 div#subtitulo {
     position: fixed;
+    margin: auto;
+
     bottom: 68%;
     left: 50%;
     transform: translateX(-50%);
@@ -32,6 +37,7 @@ div#subtitulo {
 
 div#tecnologias {
     position: fixed;
+    margin: auto;
 
     bottom: 40%;
     left: 50%;
@@ -264,60 +270,6 @@ nav#e_redes_sociais > a:hover {
     text-decoration-color: rgb(94, 108, 125);
     
     margin: 10px;
-}
-
-@media (max-width: 1084px) {
-    div#nome {
-        font-size: 180%;
-    }
-}
-
-@media (max-width: 780px) { 
-    div#nome {
-        font-size: 130%;
-    }
-}
-
-@media (max-width: 705px) {
-    div#subtitulo {
-        font-size: 75%;
-    }
-}
-
-@media (max-width: 563px) {
-    div#nome {
-        bottom: 61%;
-        font-size: 115%;
-    }
-
-    div#subtitulo {
-        bottom: 73%;
-        font-size: 72%;
-    }
-
-    div#tecnologias {
-        left: 53%;
-        bottom: 56%;
-        font-size: 33px;
-    }
-}
-
-@media (min-width: 563px) {
-    div#nome {
-        bottom: 61%;
-        font-size: 115%;
-    }
-
-    div#subtitulo {
-        bottom: 73%;
-        font-size: 72%;
-    }
-
-    div#tecnologias {
-        left: 53%;
-        bottom: 56%;
-        font-size: 33px;
-    }
 }
 
 @media (max-width: 571px) {
