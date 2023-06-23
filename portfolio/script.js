@@ -1,4 +1,6 @@
 let body = document.getElementById("body")
+let header = document.getElementById("header")
+
 let nome = document.getElementById("nome")
 let subtitulo = document.getElementById("subtitulo")
 let tecnologias = document.getElementById("tecnologias")
@@ -13,7 +15,7 @@ let projetos = document.getElementById("projetos")
 
 let hamb = document.getElementById("hamb")
 
-let mobile_menu = document.getElementById("mobile_menu")
+let menu_mobile = document.getElementById("menu_mobile")
 let m_inicio = document.getElementById("m_inicio")
 let m_sobre = document.getElementById("m_sobre")
 let m_projetos = document.getElementById("m_projetos")
@@ -37,13 +39,10 @@ function clickMenu() {
 }
 
 function modoClaro() {
-    // position: fixed;
-    // display: flex;
-    
-    // left: 100%;
-    // transform: translateX(-100%);
-
     body.style.backgroundColor = 'rgb(209, 209, 209)'
+    header.style.backgroundColor = 'rgb(209, 209, 209)'
+    menu_mobile.style.backgroundColor = 'rgb(209, 209, 209)'
+
     nome.style.color = "rgb(17, 38, 57)"
     subtitulo.style.color = "rgb(17, 38, 57)"
     tecnologias.style.color = "rgb(17, 38, 57)"
@@ -75,6 +74,9 @@ function modoClaro() {
 
 function modoEscuro() {
     body.style.backgroundColor = 'rgb(17, 38, 57)'
+    header.style.backgroundColor = 'rgb(17, 38, 57)'
+    menu_mobile.style.backgroundColor = 'rgb(17, 38, 57)'
+
     nome.style.color = "white"
     subtitulo.style.color = "white"
     tecnologias.style.color = "white"

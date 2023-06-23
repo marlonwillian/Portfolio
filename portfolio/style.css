@@ -9,20 +9,20 @@ body {
 }
 
 header {
+    position: fixed;
     margin: auto;
+    background-color: rgb(17, 38, 57);
 
+    width: 100%;
+    height: 55px;
     min-width: 230px;
-}
-
-div#inicio {
-    white-space: nowrap;
-
-    margin: auto;
-    padding: 20px;
+    z-index: 9;
 }
 
 div#nome {
-    position: fixed;
+    position: absolute;
+    margin: auto;
+    white-space: nowrap;
 
     bottom: 49%;
     left: 50%;
@@ -32,7 +32,9 @@ div#nome {
 }
 
 div#subtitulo {
-    position: fixed;
+    position: absolute;
+    margin: auto;
+    white-space: nowrap;
 
     bottom: 68%;
     left: 50%;
@@ -42,7 +44,9 @@ div#subtitulo {
 }
 
 div#tecnologias {
-    position: fixed;
+    position: absolute;
+    margin: auto;
+    white-space: nowrap;
 
     bottom: 40%;
     left: 50%;
@@ -68,9 +72,22 @@ div#tecnologias > i {
     padding-right: 30px;
 }
 
-div#tecnologias > i:hover {
-    color: rgb(130, 3, 149);
+div#tecnologias > i#js:hover {
+    color: rgb(223, 206, 74);
 }
+
+div#tecnologias > i#html:hover {
+    color: rgb(221, 75, 36);
+}
+
+div#tecnologias > i#css:hover {
+    color: rgb(53, 149, 207);
+}
+
+div#tecnologias > i#py:hover {
+    color: rgb(240, 220, 78);
+}
+
 
 .revelacao_nome {
     overflow: hidden;
@@ -133,6 +150,7 @@ header > nav#modo{
     padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 10px;
+    z-index: 9;
 }
 
 nav#modo > a#claro {
@@ -177,18 +195,24 @@ header > nav#menu {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 10px;
+    z-index: 9;
 }
 
 header > nav#menu_mobile {
+    background-color: rgb(17, 38, 57);
+    width: 100%;
+
     display: none;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     font-size: larger;
+    white-space: nowrap;
 
     text-align: center;
     padding-top: 15px;
     padding-bottom: 10px;
+    z-index: 8;
 }
 
 header > i#hamb {
@@ -209,6 +233,8 @@ header > nav#c_redes_sociais {
     margin: auto;
     padding-right: 15px;
     padding-top: 5px;
+
+    z-index: 9;
 }
 
 header > nav#e_redes_sociais {
@@ -218,6 +244,8 @@ header > nav#e_redes_sociais {
 
     padding-right: 15px;
     padding-top: 5px;
+
+    z-index: 9;
 }
 
 nav#menu > a {
@@ -254,7 +282,7 @@ nav#e_redes_sociais > a {
 
 nav#menu > a:hover {
     text-decoration: overline;
-    text-decoration-color: rgb(130, 3, 149);
+    text-decoration-color: rgb(94, 108, 125);
     
     margin: 10px;
 }
@@ -266,17 +294,11 @@ nav#menu_mobile > a:hover {
     margin: 10px;
 }
 
-nav#c_redes_sociais > a:hover {
-    text-decoration: overline;
-    text-decoration-color: rgb(94, 108, 125);
-    
+nav#c_redes_sociais > a:hover {    
     margin-right: 10px;
 }
 
 nav#e_redes_sociais > a:hover {
-    text-decoration: overline;
-    text-decoration-color: rgb(94, 108, 125);
-    
     margin-right: 10px;
 }
 
@@ -313,20 +335,6 @@ nav#e_redes_sociais > a:hover {
         bottom: 48%;
         left: 52%;
         font-size: 32px; 
-    }
-}
-
-@media (max-width: 455px) {
-    div#nome {
-        white-space: nowrap;
-    }
-
-    div#subtitulo {
-        white-space: nowrap;
-    }
-
-    div#tecnologias {
-        white-space: nowrap;
     }
 }
 
@@ -387,14 +395,6 @@ nav#e_redes_sociais > a:hover {
 @media (max-width: 300px) {
     body {
         overflow-x: hidden;
-    }
-
-    header > #mobile_menu {
-        white-space: nowrap;
-    }
-
-    header > #mobile_menu {
-        white-space: nowrap;
     }
 
     header > #hamb{
