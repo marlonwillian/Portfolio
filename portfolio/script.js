@@ -37,6 +37,12 @@ function clickMenu() {
 }
 
 function modoClaro() {
+    // position: fixed;
+    // display: flex;
+    
+    // left: 100%;
+    // transform: translateX(-100%);
+
     body.style.backgroundColor = 'rgb(209, 209, 209)'
     nome.style.color = "rgb(17, 38, 57)"
     subtitulo.style.color = "rgb(17, 38, 57)"
@@ -53,8 +59,11 @@ function modoClaro() {
     m_projetos.style.color = 'rgb(17, 38, 57)'
 
     c_sociais.style.display = "none"
+    e_sociais.style.display = "flex"
 
-    e_sociais.style.display = "block"
+    e_sociais.style.position = "fixed"
+    e_sociais.style.left = "100%"
+    e_sociais.style.transform = "translate(-100%)"
 
     e_github.href = "https://www.github.com/marlonwillian"
     e_linkedin.href = "https://www.linkedin.com/in/marlon-willian-silva-barros-30b49122b/"
@@ -80,9 +89,12 @@ function modoEscuro() {
     m_sobre.style.color = 'white'
     m_projetos.style.color = 'white'
 
-    c_sociais.style.display = "block"
-    
     e_sociais.style.display = "none"
+    c_sociais.style.display = "flex"
+
+    c_sociais.style.position = "fixed"
+    c_sociais.style.left = "100%"
+    c_sociais.style.transform = "translate(-100%)"
 
     escuro.style.display = "none"
     claro.style.display = "block"

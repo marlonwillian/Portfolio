@@ -4,6 +4,8 @@ body {
     background-color: rgb(17, 38, 57);
 
     margin: auto;
+
+    height: 2000px;
 }
 
 header {
@@ -12,11 +14,16 @@ header {
     min-width: 230px;
 }
 
+div#inicio {
+    white-space: nowrap;
+
+    margin: auto;
+    padding: 20px;
+}
+
 div#nome {
     position: fixed;
-    margin: auto;
 
-    padding: 20px;
     bottom: 49%;
     left: 50%;
     transform: translateX(-50%);
@@ -26,7 +33,6 @@ div#nome {
 
 div#subtitulo {
     position: fixed;
-    margin: auto;
 
     bottom: 68%;
     left: 50%;
@@ -37,7 +43,6 @@ div#subtitulo {
 
 div#tecnologias {
     position: fixed;
-    margin: auto;
 
     bottom: 40%;
     left: 50%;
@@ -122,7 +127,7 @@ div#tecnologias > i:hover {
 }
 
 header > nav#modo{
-    position: absolute;
+    position: fixed;
     text-align: left;
 
     padding-left: 15px;
@@ -164,7 +169,7 @@ header > nav#menu {
     color: white;
 
     display: block;
-    position: absolute;
+    position: fixed;
     left: 50%;
     transform: translateX(-50%);
     font-size: larger;
@@ -176,7 +181,7 @@ header > nav#menu {
 
 header > nav#menu_mobile {
     display: none;
-    position: absolute;
+    position: fixed;
     left: 50%;
     transform: translateX(-50%);
     font-size: larger;
@@ -195,21 +200,24 @@ header > i#hamb {
 }
 
 header > nav#c_redes_sociais {
-    text-align: right;
+    position: fixed;
+    display: flex;
+    
+    left: 100%;
+    transform: translateX(-100%);
 
     margin: auto;
     padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 5px;
 }
 
 header > nav#e_redes_sociais {
     text-align: right;
 
-    margin: 3px;
+    margin: auto;
+
     padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 5px;
 }
 
 nav#menu > a {
@@ -233,14 +241,14 @@ nav#menu_mobile > a {
 nav#c_redes_sociais > a {
     color: white;
 
-    padding: 5px;
+    padding: 10px;
     transition-duration: 0.5s;
 }
 
 nav#e_redes_sociais > a {
     color: white;
 
-    padding: 5px;
+    padding: 10px;
     transition-duration: 0.5s;
 }
 
@@ -262,14 +270,56 @@ nav#c_redes_sociais > a:hover {
     text-decoration: overline;
     text-decoration-color: rgb(94, 108, 125);
     
-    margin: 10px;
+    margin-right: 10px;
 }
 
 nav#e_redes_sociais > a:hover {
     text-decoration: overline;
     text-decoration-color: rgb(94, 108, 125);
     
-    margin: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 754px) {
+    div#nome {
+        bottom: 55%;
+        font-size: 130%;
+    }
+    
+    div#subtitulo {
+        font-size: 88%;
+        bottom: 68%;
+    }
+
+    div#tecnologias {
+        bottom: 48%;
+        left: 52%;
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 563px) {
+    div#nome {
+        bottom: 55%;
+        font-size: 100%; 
+    }
+    
+    div#subtitulo {
+        font-size: 68%;
+        bottom: 68%; 
+    }
+
+    div#tecnologias {
+        bottom: 48%;
+        left: 52%;
+        font-size: 32px; 
+    }
+}
+
+@media (max-width: 432px) {
+    div#inicio {
+        white-space: nowrap;
+    }
 }
 
 @media (max-width: 571px) {
@@ -297,26 +347,28 @@ nav#e_redes_sociais > a:hover {
     header > i#hamb {
         display: block;
         
-        position: absolute;
+        position: fixed;
         left: 50%;
         transform: translateX(-50%);
         padding-top: 25px;
     }
 
     header > nav#c_redes_sociais {
-        padding-right: 0px;
+        padding-top: 10px;
+        padding-right: 2px;
     }
 
     header > nav#c_redes_sociais > a {
-        padding: 3px;
+        padding: 5px;
     }
 
     header > nav#e_redes_sociais {
-        padding-right: 0px;
+        padding-top: 10px;
+        padding-right: 2px;
     }
 
     header > nav#e_redes_sociais > a {
-        padding: 3px;
+        padding: 5px;
     }
 
     header > nav#modo {
@@ -325,6 +377,18 @@ nav#e_redes_sociais > a:hover {
 }
 
 @media (max-width: 300px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header > #mobile_menu {
+        white-space: nowrap;
+    }
+
+    header > #mobile_menu {
+        white-space: nowrap;
+    }
+
     header > #hamb{
         left: 0%;
         transform: translateX(0%);
