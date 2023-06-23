@@ -316,8 +316,16 @@ nav#e_redes_sociais > a:hover {
     }
 }
 
-@media (max-width: 432px) {
-    div#inicio {
+@media (max-width: 455px) {
+    div#nome {
+        white-space: nowrap;
+    }
+
+    div#subtitulo {
+        white-space: nowrap;
+    }
+
+    div#tecnologias {
         white-space: nowrap;
     }
 }
