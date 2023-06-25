@@ -5,6 +5,7 @@ body {
 
     margin: auto;
 
+    height: 2000px;
 }
 
 header {
@@ -182,7 +183,7 @@ div#nome {
     margin: auto;
     white-space: nowrap;
 
-    bottom: 45%;
+    bottom: 42%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -194,7 +195,7 @@ div#subtitulo {
     margin: auto;
     white-space: nowrap;
 
-    bottom: 63%;
+    bottom: 60%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -206,7 +207,7 @@ div#tecnologias {
     margin: auto;
     white-space: nowrap;
 
-    bottom: 35%;
+    bottom: 32%;
     left: 51%;
     transform: translateX(-50%);
 
@@ -307,19 +308,58 @@ div#sobre_mim {
 
     border-radius: 10px;
     color: white;
+    background-color: rgb(17, 38, 57);
     
-    top: 100%;
-    left: 25%;
-    transform: translateX(-25%);
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 1000px;
+    height: 300px;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
 
-    font-size: 170%;
+    padding: 15px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-div#sobre_mim > h1 {
-    padding: 3px;
+div#sobre_mim > div#sobre_titulo {
+    font-size: 165%;
     
+    position: absolute;
+    left: 10%;
+    float: left;
+}
+
+div#sobre_mim > div#sobre_titulo > img{
+    width: 200px;
+    border: 1px none white;
+    border-radius: 55px;
+}
+
+div#sobre_mim > div#sobre_titulo > hr#linha_1{
+    position: absolute;
+    width: 250px;
+    right: 300px;
+    bottom: 320px;
+}
+
+div#sobre_mim > div#sobre_titulo > hr#linha_2{
+    position: absolute;
+    width: 580px;
+    left: 300px;
+    bottom: 320px;
+}
+
+div#sobre_mim > div#sobre_descricao {
+    position: absolute;
+    text-align: left;
+
+    font-size: 130%;
+    left: 40%;
+    top: 50%;
+
+    width: 500px;
+    height: 100px;
 }
 
 @media (max-width: 754px) {
