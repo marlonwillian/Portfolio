@@ -307,7 +307,6 @@ div#sobre_mim {
     text-align: center;
 
     border-radius: 10px;
-    color: white;
     background-color: rgb(17, 38, 57);
     
     width: 1000px;
@@ -330,24 +329,34 @@ div#sobre_mim > div#sobre_titulo {
     float: left;
 }
 
-div#sobre_mim > div#sobre_titulo > img{
+#img_eu {
     width: 200px;
-    border: 1px none white;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(209, 209, 209);
     border-radius: 55px;
 }
 
 div#sobre_mim > div#sobre_titulo > hr#linha_1{
     position: absolute;
-    width: 250px;
+    background-color: white;
+
     right: 300px;
     bottom: 320px;
+
+    width: 315px;
+    height: 3px;
 }
 
 div#sobre_mim > div#sobre_titulo > hr#linha_2{
     position: absolute;
-    width: 580px;
+    background-color: white;
+    
     left: 300px;
     bottom: 320px;
+
+    width: 580px;
+    height: 3px;
 }
 
 div#sobre_mim > div#sobre_descricao {
@@ -360,6 +369,12 @@ div#sobre_mim > div#sobre_descricao {
 
     width: 500px;
     height: 100px;
+}
+
+@media (max-width: 970px) {
+    #img_eu {
+        width: 150px;
+    }
 }
 
 @media (max-width: 754px) {

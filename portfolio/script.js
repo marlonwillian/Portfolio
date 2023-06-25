@@ -1,10 +1,6 @@
 let body = document.getElementById("body")
 let header = document.getElementById("header")
 
-let nome = document.getElementById("nome")
-let subtitulo = document.getElementById("subtitulo")
-let tecnologias = document.getElementById("tecnologias")
-
 let escuro = document.getElementById("escuro")
 let claro = document.getElementById("claro")
 
@@ -30,6 +26,20 @@ let e_github = document.getElementById("e_github")
 let e_linkedin = document.getElementById("e_linkedin")
 let e_insta = document.getElementById("e_insta")
 
+let nome = document.getElementById("nome")
+let subtitulo = document.getElementById("subtitulo")
+let tecnologias = document.getElementById("tecnologias")
+
+let sobre_mim = document.getElementById("sobre_mim")
+
+let sobre_titulo = document.getElementById("sobre_titulo")
+let hr1 = document.getElementById("linha_1")
+let hr2 = document.getElementById("linha_2")
+
+let img_eu = document.getElementById("img_eu")
+
+let sobre_descricao = document.getElementById("sobre_descricao")
+
 function clickMenu() {
     if (menu_mobile.style.display == 'grid') {
         menu_mobile.style.display = 'none'
@@ -42,10 +52,7 @@ function modoClaro() {
     body.style.backgroundColor = 'rgb(209, 209, 209)'
     header.style.backgroundColor = 'rgb(209, 209, 209)'
     menu_mobile.style.backgroundColor = 'rgb(209, 209, 209)'
-
-    nome.style.color = "rgb(17, 38, 57)"
-    subtitulo.style.color = "rgb(17, 38, 57)"
-    tecnologias.style.color = "rgb(17, 38, 57)"
+    sobre_mim.style.backgroundColor = 'rgb(209, 209, 209)'
 
     inicio.style.color = 'rgb(17, 38, 57)'
     sobre.style.color = 'rgb(17, 38, 57)'
@@ -67,6 +74,18 @@ function modoClaro() {
     e_github.href = "https://www.github.com/marlonwillian"
     e_linkedin.href = "https://www.linkedin.com/in/marlon-willian-silva-barros-30b49122b/"
     e_insta.href = "https://www.instagram.com/mwbrrs/"
+
+    nome.style.color = "rgb(17, 38, 57)"
+    subtitulo.style.color = "rgb(17, 38, 57)"
+    tecnologias.style.color = "rgb(17, 38, 57)"
+
+    sobre_titulo.style.color = "rgb(17, 38, 57)"
+    hr1.style.background = "rgb(17, 38, 57)"
+    hr2.style.background = "rgb(17, 38, 57)"
+
+    img_eu.style.borderColor = "rgb(17, 38, 57)"
+
+    sobre_descricao.style.color = "rgb(17, 38, 57)"
     
     claro.style.display = "none"
     escuro.style.display = "block"
@@ -76,10 +95,7 @@ function modoEscuro() {
     body.style.backgroundColor = 'rgb(17, 38, 57)'
     header.style.backgroundColor = 'rgb(17, 38, 57)'
     menu_mobile.style.backgroundColor = 'rgb(17, 38, 57)'
-
-    nome.style.color = "white"
-    subtitulo.style.color = "white"
-    tecnologias.style.color = "white"
+    sobre_mim.style.backgroundColor = 'rgb(17, 38, 57)'
 
     inicio.style.color = 'white'
     sobre.style.color = 'white'
@@ -97,6 +113,18 @@ function modoEscuro() {
     c_sociais.style.position = "fixed"
     c_sociais.style.left = "100%"
     c_sociais.style.transform = "translate(-100%)"
+
+    nome.style.color = "white"
+    subtitulo.style.color = "white"
+    tecnologias.style.color = "white"
+
+    sobre_titulo.style.color = "white"
+    hr1.style.background = "white"
+    hr2.style.background = "white"
+
+    img_eu.style.borderColor = "rgb(209, 209, 209)"
+
+    sobre_descricao.style.color = "white"
 
     escuro.style.display = "none"
     claro.style.display = "block"
