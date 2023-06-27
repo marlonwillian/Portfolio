@@ -302,114 +302,92 @@ div#tecnologias > i#py:hover {
     }
 }
 
-div#sobre_mim {
+div#sobre_titulo {
     position: absolute;
-    text-align: center;
-
-    border-radius: 10px;
+    font-size: 150%;
     background-color: rgb(17, 38, 57);
+    white-space: nowrap;
     
-    width: 1000px;
-    height: 300px;
-    top: 95%;
+    top: 640px;
     left: 50%;
     transform: translateX(-50%);
 
-    padding: 15px;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    z-index: 1;
 }
 
-div#sobre_mim > div#sobre_titulo {
-    font-size: 165%;
-    
+hr#linha_1 {
     position: absolute;
-    left: 10%;
-    float: left;
+    background-color: white;
+
+    width: 99.8%;
+    height: 1px;
+
+    top: 700px;
 }
 
-#img_eu {
-    width: 200px;
-    border: 2px;
-    border-style: solid;
-    border-color: rgb(209, 209, 209);
+img#i_eu {  
+    position: absolute;
+    width: 180px;
+
+    border: 2px solid white;
     border-radius: 55px;
+
+    margin: auto;
+    top: 785px;
+    left: 30%;
 }
 
-div#sobre_mim > div#sobre_titulo > hr#linha_1{
-    position: absolute;
-    background-color: white;
+div#sobre_descricao {
+    position: relative;
 
-    right: 300px;
-    bottom: 320px;
-
-    width: 315px;
-    height: 3px;
-}
-
-div#sobre_mim > div#sobre_titulo > hr#linha_2{
-    position: absolute;
-    background-color: white;
-    
-    left: 300px;
-    bottom: 320px;
-
-    width: 580px;
-    height: 3px;
-}
-
-div#sobre_mim > div#sobre_descricao {
-    position: absolute;
     text-align: left;
+    font-size: 20px;
+    width: 450px;
 
-    font-size: 130%;
-    left: 40%;
-    top: 50%;
-
-    width: 500px;
-    height: 100px;
+    margin: auto;
+    top: 800px;
+    left: 20%;
 }
 
-@media (max-width: 970px) {
-    #img_eu {
-        width: 150px;
+@media (max-width: 1030px) {
+    img#i_eu {
+        left: 15%;
+    }
+
+    div#sobre_descricao {
+        left: 20%;
+    }
+}
+
+@media (max-width: 790px) {
+    img#i_eu {
+        left: 37%
+    }
+
+    div#sobre_descricao {
+        text-align: center;
+        font-size: 21px;
+
+        top: 1070px;
+        left: 3%
     }
 }
 
 @media (max-width: 754px) {
     div#nome {
-        bottom: 55%;
-        font-size: 130%;
+        font-size: 150%;
     }
     
     div#subtitulo {
-        font-size: 88%;
-        bottom: 68%;
+        font-size: 100%;
     }
 
     div#tecnologias {
-        bottom: 48%;
         left: 52%;
-        font-size: 42px;
-    }
-}
-
-@media (max-width: 563px) {
-    div#nome {
-        bottom: 55%;
-        font-size: 100%; 
-    }
-    
-    div#subtitulo {
-        font-size: 68%;
-        bottom: 68%; 
-    }
-
-    div#tecnologias {
-        bottom: 48%;
-        left: 52%;
-        font-size: 32px; 
+        font-size: 48px;
     }
 }
 
@@ -467,7 +445,7 @@ div#sobre_mim > div#sobre_descricao {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 517px) {
     body {
         overflow-x: hidden;
     }
@@ -475,5 +453,35 @@ div#sobre_mim > div#sobre_descricao {
     header > #hamb{
         left: 0%;
         transform: translateX(0%);
+    }
+}
+
+@media (max-width: 500px) {
+    hr#linha_1 {
+        display: none;
+    }
+
+    div#sobre_descricao {
+        width: 300px;
+    }
+
+    img#i_eu {
+        left: 30%;
+    }
+}
+
+/* bottom: 42%; bottom: 60%; bottom: 32%; */
+
+@media (max-width: 430px) {
+    div#nome {
+        bottom: 54%;
+    }
+    
+    div#subtitulo {
+        bottom: 68%;
+    }
+
+    div#tecnologias {
+        bottom: 46%;
     }
 }

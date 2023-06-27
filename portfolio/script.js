@@ -30,13 +30,10 @@ let nome = document.getElementById("nome")
 let subtitulo = document.getElementById("subtitulo")
 let tecnologias = document.getElementById("tecnologias")
 
-let sobre_mim = document.getElementById("sobre_mim")
-
 let sobre_titulo = document.getElementById("sobre_titulo")
 let hr1 = document.getElementById("linha_1")
-let hr2 = document.getElementById("linha_2")
 
-let img_eu = document.getElementById("img_eu")
+let i_eu = document.getElementById("i_eu")
 
 let sobre_descricao = document.getElementById("sobre_descricao")
 
@@ -52,7 +49,8 @@ function modoClaro() {
     body.style.backgroundColor = 'rgb(209, 209, 209)'
     header.style.backgroundColor = 'rgb(209, 209, 209)'
     menu_mobile.style.backgroundColor = 'rgb(209, 209, 209)'
-    sobre_mim.style.backgroundColor = 'rgb(209, 209, 209)'
+
+    sobre_titulo.style.backgroundColor = 'rgb(209, 209, 209)'
 
     inicio.style.color = 'rgb(17, 38, 57)'
     sobre.style.color = 'rgb(17, 38, 57)'
@@ -81,9 +79,8 @@ function modoClaro() {
 
     sobre_titulo.style.color = "rgb(17, 38, 57)"
     hr1.style.background = "rgb(17, 38, 57)"
-    hr2.style.background = "rgb(17, 38, 57)"
 
-    img_eu.style.borderColor = "rgb(17, 38, 57)"
+    i_eu.style.borderColor = "rgb(17, 38, 57)"
 
     sobre_descricao.style.color = "rgb(17, 38, 57)"
     
@@ -95,7 +92,8 @@ function modoEscuro() {
     body.style.backgroundColor = 'rgb(17, 38, 57)'
     header.style.backgroundColor = 'rgb(17, 38, 57)'
     menu_mobile.style.backgroundColor = 'rgb(17, 38, 57)'
-    sobre_mim.style.backgroundColor = 'rgb(17, 38, 57)'
+
+    sobre_titulo.style.backgroundColor = 'rgb(17, 38, 57)'
 
     inicio.style.color = 'white'
     sobre.style.color = 'white'
@@ -120,9 +118,8 @@ function modoEscuro() {
 
     sobre_titulo.style.color = "white"
     hr1.style.background = "white"
-    hr2.style.background = "white"
 
-    img_eu.style.borderColor = "rgb(209, 209, 209)"
+    i_eu.style.borderColor = "rgb(209, 209, 209)"
 
     sobre_descricao.style.color = "white"
 
