@@ -61,6 +61,10 @@ function modoClaro() {
     m_inicio.style.color = 'rgb(17, 38, 57)'
     m_sobre.style.color = 'rgb(17, 38, 57)'
     m_projetos.style.color = 'rgb(17, 38, 57)'
+    
+    m_inicio.style.borderColor = 'rgb(17, 38, 57)'
+    m_sobre.style.borderColor = 'rgb(17, 38, 57)'
+    m_projetos.style.borderColor = 'rgb(17, 38, 57)'
 
     c_sociais.style.display = "none"
     e_sociais.style.display = "flex"
@@ -104,6 +108,10 @@ function modoEscuro() {
     m_inicio.style.color = 'white'
     m_sobre.style.color = 'white'
     m_projetos.style.color = 'white'
+
+    m_inicio.style.borderColor = 'white'
+    m_sobre.style.borderColor = 'white'
+    m_projetos.style.borderColor = 'white'
 
     e_sociais.style.display = "none"
     c_sociais.style.display = "flex"

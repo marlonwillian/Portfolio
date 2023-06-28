@@ -122,8 +122,9 @@ header > nav#e_redes_sociais {
 }
 
 nav#menu_mobile > a#m_inicio {
+    padding-top: 15px;
     padding-bottom: 15px;
-
+    
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
@@ -196,39 +197,33 @@ nav#e_redes_sociais > a:hover {
     margin-right: 10px;
 }
 
-div#nome {
-    position: absolute;
-    white-space: nowrap;
+section#apresentacao {
+    position: relative;
+    text-align: center;
 
-    bottom: 42%;
-    left: 50%;
-    transform: translateX(-50%);
-
-    font-size: 174%;
+    padding-top: 180px;
 }
 
 div#subtitulo {
-    position: absolute;
+    position: relative;
     margin: auto;
     white-space: nowrap;
 
-    bottom: 60%;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 110%;
+}
 
-    font-size: 120%;
+div#nome {
+    position: relative;
+    white-space: nowrap;
+
+    font-size: 210%;
 }
 
 div#tecnologias {
-    position: absolute;
-    margin: auto;
+    position: relative;
     white-space: nowrap;
 
-    bottom: 32%;
-    left: 51%;
-    transform: translateX(-50%);
-
-    font-size: 50px;
+    font-size: 45px;
 }
 
 div#nome > h1 {
@@ -246,6 +241,10 @@ div#tecnologias > i {
     animation: invisivel 0.5s 1s cubic-bezier(0.85, 0, 0.15, 1) forwards;
 
     padding-right: 30px;
+}
+
+div#tecnologias > i#js {
+    padding-left: 30px;
 }
 
 div#tecnologias > i#js:hover {
@@ -323,7 +322,7 @@ section#sobre_mim {
     text-align: center;
     width: 100%;
 
-    top: 750px;
+    top: 760px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -371,21 +370,6 @@ div#sobre_descricao {
     
     font-size: 25px;
 }
-
-/* @media (max-width: 754px) {
-    div#nome {
-        font-size: 150%;
-    }
-    
-    div#subtitulo {
-        font-size: 100%;
-    }
-
-    div#tecnologias {
-        left: 52%;
-        font-size: 48px;
-    }
-} */
 
 @media (max-width: 571px) {
     header > nav#menu{
