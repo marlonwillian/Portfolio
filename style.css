@@ -509,7 +509,7 @@ div#sobre_descricao {
 
 /* bottom: 42%; bottom: 60%; bottom: 32%; */
 
-@media (max-width: 450px) and (max-height: 950px) {
+@media (max-width: 500px) and (max-height: 1000px) {
     div#nome {
         bottom: 50%;
     }
