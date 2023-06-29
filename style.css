@@ -363,12 +363,23 @@ img#i_eu {
 
 div#sobre_descricao {
     margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    
     padding: 5px;
     text-align: center;
     
     font-size: 25px;
+}
+
+div#sobre_descricao > label#2020{
+    padding-bottom: 30px;
+}
+
+div#sobre_descricao > label#2021{
+    padding-bottom: 30px;
+
+    text-decoration: none;
 }
 
 @media (max-width: 571px) {
