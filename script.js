@@ -26,6 +26,7 @@ let e_github = document.getElementById("e_github")
 let e_linkedin = document.getElementById("e_linkedin")
 let e_insta = document.getElementById("e_insta")
 
+let jv_github = document.getElementById("jv_github")
 
 let gc_projeto = document.getElementById("gc_projeto")
 let gc_github = document.getElementById("gc_github")
@@ -90,6 +91,11 @@ function modoClaro() {
     e_sociais.style.left = "100%"
     e_sociais.style.transform = "translate(-100%)"
 
+    jv_github.style.color = "rgb(17, 38, 57)"
+
+    gc_github.style.color = "rgb(17, 38, 57)"
+    gc_projeto.style.color = "rgb(17, 38, 57)"
+
     e_github.href = "https://www.github.com/marlonwillian"
     e_linkedin.href = "https://www.linkedin.com/in/marlon-willian-silva-barros-30b49122b/"
     e_insta.href = "https://www.instagram.com/mwbrrs/"
@@ -113,10 +119,10 @@ function modoClaro() {
     jogo_da_velha.style.backgroundColor = "rgb(209, 209, 209)"
     gerador_de_cartas.style.backgroundColor = "rgb(209, 209, 209)"
     
-    hr3.style.background = "rgb(17, 38, 57)"
-    hr4.style.background = "rgb(17, 38, 57)"
-    hr5.style.background = "rgb(17, 38, 57)"
-    hr6.style.background = "rgb(17, 38, 57)"
+    hr3.style.backgroundColor = "rgb(17, 38, 57)"
+    hr4.style.backgroundColor = "rgb(17, 38, 57)"
+    hr5.style.backgroundColor = "rgb(17, 38, 57)"
+    hr6.style.backgroundColor = "rgb(17, 38, 57)"
 
     hr3.style.borderColor = "rgb(17, 38, 57)"
     hr4.style.borderColor = "rgb(17, 38, 57)"
@@ -137,6 +143,7 @@ function modoEscuro() {
     menu_mobile.style.backgroundColor = 'rgb(17, 38, 57)'
 
     sobre_titulo.style.backgroundColor = 'rgb(17, 38, 57)'
+    projetos_titulo.style.backgroundColor = 'rgb(17, 38, 57)'
 
     inicio.style.color = 'white'
     sobre.style.color = 'white'
@@ -159,12 +166,41 @@ function modoEscuro() {
     c_sociais.style.left = "100%"
     c_sociais.style.transform = "translate(-100%)"
 
+    jv_github.style.color = "white"
+
+    gc_github.style.color = "white"
+    gc_projeto.style.color = "white"
+
     nome.style.color = "white"
     subtitulo.style.color = "white"
     tecnologias.style.color = "white"
 
     sobre_titulo.style.color = "white"
     hr1.style.background = "white"
+
+    projetos_titulo.style.color = "white"
+    
+    hr1.style.background = "white"
+    hr2.style.background = "white"
+
+    jogo_da_velha.style.color = "white"
+    gerador_de_cartas.style.color = "white"
+
+    jogo_da_velha.style.borderColor = "white"
+    gerador_de_cartas.style.borderColor = "white"
+
+    jogo_da_velha.style.backgroundColor = "rgb(17, 38, 57)"
+    gerador_de_cartas.style.backgroundColor = "rgb(17, 38, 57)"
+    
+    hr3.style.backgroundColor = "white"
+    hr4.style.backgroundColor = "white"
+    hr5.style.backgroundColor = "white"
+    hr6.style.backgroundColor = "white"
+
+    hr3.style.borderColor = "white"
+    hr4.style.borderColor = "white"
+    hr5.style.borderColor = "white"
+    hr6.style.borderColor = "white"
 
     i_eu.style.borderColor = "rgb(209, 209, 209)"
 
