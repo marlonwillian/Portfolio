@@ -12,7 +12,7 @@ header {
     background-color: rgb(17, 38, 57);
 
     width: 100%;
-    height: 55px;
+    height: 45px;
     min-width: 230px;
     z-index: 9;
 }
@@ -223,7 +223,7 @@ div#tecnologias {
     position: relative;
     white-space: nowrap;
 
-    font-size: 45px;
+    font-size: 50px;
 }
 
 div#nome > h1 {
@@ -319,6 +319,7 @@ div#tecnologias > i#py:hover {
 
 section#sobre_mim {
     position: absolute;
+    
     text-align: center;
     width: 100%;
 
@@ -334,15 +335,12 @@ div#sobre_titulo {
     
     left: 50%;
     transform: translateX(-50%);
+    padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
 
-    font-size: 150%;
-    z-index: 1;
-}
-
-div#sobre_titulo {
     font-size: 30px;
+    z-index: 1;
 }
 
 hr#linha_1 {
@@ -350,12 +348,47 @@ hr#linha_1 {
     background-color: white;
     height: 2px;
 
-    bottom: 65px;
+    bottom: 100px;
+}
+
+hr#linha_2 {
+    position: relative;
+    background-color: white;
+    height: 2px;
+
+    bottom: 100px;
+}
+
+hr#linha_3 {
+    position: relative;
+    background-color: white;
+
+    height: 1px;
+}
+
+hr#linha_4 {
+    position: relative;
+    background-color: white;
+
+    height: 1px;
+}
+
+hr#linha_5 {
+    position: relative;
+    background-color: white;
+    height: 1px;
+}
+hr#linha_6 {
+    position: relative;
+    background-color: white;
+    height: 1px;
 }
 
 img#i_eu {
+    width: 220px;
+
     border: 2px solid white;
-    border-radius: 30px;
+    border-radius: 300px;
 
     margin: 5px;
     padding: 5px;
@@ -363,23 +396,138 @@ img#i_eu {
 
 div#sobre_descricao {
     margin-top: 30px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 300px;
+    margin-right: 300px;
     
     padding: 5px;
-    text-align: center;
+    text-align: justify;
     
+    font-size: 23px;
+}
+
+div#sobre_descricao > p > a {
+    text-decoration: none;
+}
+
+main#projetos {
+    position: absolute;
+    text-align: center;
+
+    margin-top: 50px;
+    padding-bottom: 50px;
+
+    width: 100%;
+}
+
+div#projetos_titulo {
+    position: relative;
+    background-color: rgb(17, 38, 57);
+    width: 250px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-size: 30px;
+    z-index: 1;
+}
+
+hr#linha_2 {
+    position: relative;
+    background-color: white;
+    height: 2px;
+
+    bottom: 65px;
+}
+
+section#lista_projetos > div{
+    display: inline-block;
+
+    color: white;
+    background-color: rgb(17, 38, 57);
+    border: 2px solid white;
+}
+
+section#lista_projetos > div#jogo_da_velha {
+    position: relative;
+    text-align: center;
+    width: 300px;
+    right: 5%;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+section#lista_projetos > div#jogo_da_velha > p > i{
+    font-size: 35px;
+}
+
+section#lista_projetos > div#jogo_da_velha > a{
     font-size: 25px;
 }
 
-div#sobre_descricao > label#2020{
-    padding-bottom: 30px;
+img#i_jv {
+    width: 224px;
+    border-radius: 10px;
+
+    border: 2px solid black;
 }
 
-div#sobre_descricao > label#2021{
-    padding-bottom: 30px;
+section#lista_projetos > div#gerador_de_cartas {
+    position: relative;
+    text-align: center;
+    width: 300px;
 
-    text-decoration: none;
+    left: 5%;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+img#igerador_1 {
+    width: 250px;
+    border-radius: 10px;
+
+    border: 2px solid black;
+}
+
+section#lista_projetos > div#gerador_de_cartas > p > i{
+    font-size: 30px;
+    padding: 5px;
+}
+
+section#lista_projetos > div#gerador_de_cartas > a{
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (max-width: 1030px) {
+    div#sobre_descricao {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    section#lista_projetos{
+        display: grid;
+    }
+
+    section#lista_projetos > div#jogo_da_velha{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    section#lista_projetos > div#gerador_de_cartas{
+        margin-top: 30px;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 @media (max-width: 571px) {

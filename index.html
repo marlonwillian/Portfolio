@@ -17,12 +17,12 @@
         <nav id="menu">
             <a id="inicio" href="#">Início</a>
             <a id="sobre" href="#sobre_mim">Sobre Mim</a>
-            <a id="projetos" href="#">Projetos</a>
+            <a id="projetos" href="#projetos_titulo">Projetos</a>
         </nav>
         <nav id="menu_mobile">
-            <a id="m_inicio" href="#">Início</a>
-            <a id="m_sobre" href="#sobre_mim">Sobre Mim</a>
-            <a id="m_projetos" href="#">Projetos</a>
+            <a id="m_inicio" href="#" onclick="esconde_menu()">Início</a>
+            <a id="m_sobre" href="#sobre_mim" onclick="esconde_menu()">Sobre Mim</a>
+            <a id="m_projetos" href="#projetos_titulo" onclick="esconde_menu()">Projetos</a>
         </nav>
         <nav id="c_redes_sociais">
             <a id="c_github" href="https://www.github.com/marlonwillian" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #fcfcfc;"></i></a>
@@ -54,14 +54,47 @@
             <h1>Sobre Mim</h1>
         </div>
         <hr id="linha_1">
-        <img id="i_eu" src="img/eu.jpg">
+        <img id="i_eu" src="img/eu.png">
         <div id="sobre_descricao">
-            2020 - Entrei no mundo da programação por meio de um curso de Java e um pouco de JavaScript pela Alura.<br>
-            2021 - Continuei no curso de Java, e comecei a fazer alguns Bootcamps pela <a href="www.dio.me">DIO</a><br>
-            2022 - Comecei a faculdade de Análise e Desenvolvimento de Sistemas.<br>
-            2023 - Me aprofundei nas linguagens JavaScript e Python, e estou procurando um emprego/estágio.<br>
+            <p>2020 - Entrei no mundo da programação por meio de um curso de Java/JavaScript pela <a href="https://www.alura.com.br/" target="_blank" style="color: rgb(94, 108, 125)">Alura</a>.
+            <p>2021 - Continuei no curso de Java/JavaScript, e comecei a fazer alguns Bootcamps pela <a href="https://www.dio.me/" target="_blank" style="color: rgb(94, 108, 125)">DIO</a>.
+            <p>2022 - Comecei a faculdade de Análise e Desenvolvimento de Sistemas.
+            <p>2023 - Me aprofundei nas linguagens JavaScript e Python e infelizmente deixei o Java um pouco de lado, mas apesar disso, sei o básico da linguagem Java, e estou procurando um emprego ou estágio para ganhar experiência e começar de vez na área.
         </div>
     </div>
+    <main id="projetos">
+        <div id="projetos_titulo">
+            <h1>Projetos</h1>
+        </div>
+        <hr id="linha_2">
+        <section id="lista_projetos">
+            <div id="jogo_da_velha">
+                <h2>Jogo da Velha</h2>
+                <hr id="linha_3">
+                <br><img id="i_jv" src="img/jogodavelha.png">
+                <p>
+                    <i class="fa-brands fa-python fa" color="white"></i>
+                </p>
+                <p>Jogo da velha feito com Python usando a biblioteca Tkinter.</p>
+                <hr id="linha_4">
+                <br><a href="https://github.com/marlonwillian/jogo-da-velha" target="_blank"><i id="jv_github" class="fa-brands fa-github fa-xl" style="color: #fcfcfc;"></i></a>
+            </div>
+            <div id="gerador_de_cartas">
+                <h2>Gerador de Cartas</h2>
+                <hr id="linha_5">
+                <br><img id="igerador_1" src="img/gerador_1.png">
+                <p>
+                    <i id="js" class="fa-brands fa-square-js" color="white"></i>
+                    <i id="html" class="fa-brands fa-html5" color="white"></i>
+                    <i id="css" class="fa-brands fa-css3-alt" color="white"></i>
+                </p>
+                <p>Gerador de cartas inspirado no jogo FIFA/FC.</p>
+                <hr id="linha_6">
+                <br><a href="https://github.com/marlonwillian/gerador-de-carta" target="_blank"><i id="gc_github" class="fa-brands fa-github fa-xl" style="color: #fcfcfc;"></i></a>
+                <a href="https://marlonwillian.github.io/gerador-de-carta/geradordecarta/index.html" target="_blank"><i id="gc_projeto" class="fa-solid fa-diamond-turn-right fa-xl" style="color: #fcfcfc"></i></a>
+            </div>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

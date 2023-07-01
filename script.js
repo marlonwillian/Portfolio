@@ -26,12 +26,28 @@ let e_github = document.getElementById("e_github")
 let e_linkedin = document.getElementById("e_linkedin")
 let e_insta = document.getElementById("e_insta")
 
+
+let gc_projeto = document.getElementById("gc_projeto")
+let gc_github = document.getElementById("gc_github")
+
 let nome = document.getElementById("nome")
 let subtitulo = document.getElementById("subtitulo")
 let tecnologias = document.getElementById("tecnologias")
 
+let lista_projetos = document.getElementById("lista_projetos")
 let sobre_titulo = document.getElementById("sobre_titulo")
+let projetos_titulo = document.getElementById("projetos_titulo")
+
+let jogo_da_velha = document.getElementById("jogo_da_velha")
+let gerador_de_cartas = document.getElementById("gerador_de_cartas")
+
 let hr1 = document.getElementById("linha_1")
+let hr2 = document.getElementById("linha_2")
+
+let hr3 = document.getElementById("linha_3")
+let hr4 = document.getElementById("linha_4")
+let hr5 = document.getElementById("linha_5")
+let hr6 = document.getElementById("linha_6")
 
 let i_eu = document.getElementById("i_eu")
 
@@ -46,11 +62,12 @@ function clickMenu() {
 }
 
 function modoClaro() {
-    body.style.backgroundColor = 'rgb(209, 209, 209)'
-    header.style.backgroundColor = 'rgb(209, 209, 209)'
-    menu_mobile.style.backgroundColor = 'rgb(209, 209, 209)'
+    body.style.backgroundColor = "rgb(209, 209, 209)"
+    header.style.backgroundColor = "rgb(209, 209, 209)"
+    menu_mobile.style.backgroundColor = "rgb(209, 209, 209)"
 
-    sobre_titulo.style.backgroundColor = 'rgb(209, 209, 209)'
+    sobre_titulo.style.backgroundColor = "rgb(209, 209, 209)"
+    projetos_titulo.style.backgroundColor = "rgb(209, 209, 209)"
 
     inicio.style.color = 'rgb(17, 38, 57)'
     sobre.style.color = 'rgb(17, 38, 57)'
@@ -82,7 +99,29 @@ function modoClaro() {
     tecnologias.style.color = "rgb(17, 38, 57)"
 
     sobre_titulo.style.color = "rgb(17, 38, 57)"
+    projetos_titulo.style.color = "rgb(17, 38, 57)"
+    
     hr1.style.background = "rgb(17, 38, 57)"
+    hr2.style.background = "rgb(17, 38, 57)"
+
+    jogo_da_velha.style.color = "rgb(17, 38, 57)"
+    gerador_de_cartas.style.color = "rgb(17, 38, 57)"
+
+    jogo_da_velha.style.borderColor = "rgb(17, 38, 57)"
+    gerador_de_cartas.style.borderColor = "rgb(17, 38, 57)"
+
+    jogo_da_velha.style.backgroundColor = "rgb(209, 209, 209)"
+    gerador_de_cartas.style.backgroundColor = "rgb(209, 209, 209)"
+    
+    hr3.style.background = "rgb(17, 38, 57)"
+    hr4.style.background = "rgb(17, 38, 57)"
+    hr5.style.background = "rgb(17, 38, 57)"
+    hr6.style.background = "rgb(17, 38, 57)"
+
+    hr3.style.borderColor = "rgb(17, 38, 57)"
+    hr4.style.borderColor = "rgb(17, 38, 57)"
+    hr5.style.borderColor = "rgb(17, 38, 57)"
+    hr6.style.borderColor = "rgb(17, 38, 57)"
 
     i_eu.style.borderColor = "rgb(17, 38, 57)"
 
@@ -133,4 +172,8 @@ function modoEscuro() {
 
     escuro.style.display = "none"
     claro.style.display = "block"
+}
+
+function esconde_menu () {
+    menu_mobile.style.display = "none"
 }
