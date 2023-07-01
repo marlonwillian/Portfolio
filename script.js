@@ -169,7 +169,7 @@ function modoEscuro() {
     jv_github.style.color = "white"
 
     gc_github.style.color = "white"
-    gc_projeto.style.color = "white"
+    gc_projeto.style.color = 'white'
 
     nome.style.color = "white"
     subtitulo.style.color = "white"
