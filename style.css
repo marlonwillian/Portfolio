@@ -359,28 +359,10 @@ hr#linha_2 {
     bottom: 100px;
 }
 
-hr#linha_3 {
+.linha_p {
     position: relative;
     background-color: white;
 
-    height: 1px;
-}
-
-hr#linha_4 {
-    position: relative;
-    background-color: white;
-
-    height: 1px;
-}
-
-hr#linha_5 {
-    position: relative;
-    background-color: white;
-    height: 1px;
-}
-hr#linha_6 {
-    position: relative;
-    background-color: white;
     height: 1px;
 }
 
@@ -505,6 +487,80 @@ section#lista_projetos > div#gerador_de_cartas > a{
     padding-right: 15px;
 }
 
+section#lista_projetos2 > div#jogo_da_cobrinha {
+    display: inline-block;
+
+    color: white;
+    background-color: rgb(17, 38, 57);
+    border: 2px solid white;
+
+    position: relative;
+    text-align: center;
+    width: 300px;
+    right: 5%;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+div#jogo_da_cobrinha > p > i{
+    font-size: 35px;
+    padding: 5px;
+}
+
+div#jogo_da_cobrinha > a{
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img#i_jc {
+    width: 260px;
+    height: 390px;
+    border-radius: 10px;
+
+    border: 2px solid black;
+}
+
+section#lista_projetos2 > div#pagina_netflix {
+    display: inline-block;
+
+    color: white;
+    background-color: rgb(17, 38, 57);
+    border: 2px solid white;
+
+    position: relative;
+    text-align: center;
+    width: 300px;
+
+    left: 5%;
+
+    margin-top: 50px;
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+section#lista_projetos2 > div#pagina_netflix > p > i{
+    font-size: 35px;
+    padding: 5px;
+}
+
+section#lista_projetos2 > div#pagina_netflix > a{
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img#i_pn {
+    width: 230px;
+    height: 410px;
+    border-radius: 10px;
+
+    border: 2px solid black;
+}
+
 @media (max-width: 1030px) {
     div#sobre_descricao {
         margin-left: 50px;
@@ -523,6 +579,24 @@ section#lista_projetos > div#gerador_de_cartas > a{
     }
 
     section#lista_projetos > div#gerador_de_cartas{
+        margin-top: 30px;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    section#lista_projetos2{
+        display: grid;
+    }
+
+    section#lista_projetos2 > div#jogo_da_cobrinha{
+        margin-top: 30px;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    section#lista_projetos2 > div#pagina_netflix{
         margin-top: 30px;
 
         left: 50%;
