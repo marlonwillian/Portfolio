@@ -263,6 +263,10 @@ div#tecnologias > i#py:hover {
     color: rgb(240, 220, 78);
 }
 
+div#tecnologias > i#java:hover {
+    color: lightcoral;
+}
+
 .revelacao_nome {
     overflow: hidden;
     opacity: 1;
