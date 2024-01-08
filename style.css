@@ -432,7 +432,6 @@ section#lista_projetos > div{
 
     color: white;
     background-color: rgb(17, 38, 57);
-    border: 2px solid white;
 }
 
 section#lista_projetos > div#jogo_da_velha {
@@ -461,16 +460,48 @@ img#i_jv {
     border: 2px solid black;
 }
 
-section#lista_projetos > div#gerador_de_cartas {
-    position: relative;
-    text-align: center;
-    width: 300px;
+section#lista_projetos {
+    display: inline-block;
+}
 
-    left: 5%;
+.cartao_projetos {
+    width: 500px;
+    height: 500px;
 
-    padding: 20px;
+    margin: 5px;
+    margin-top: 40px;
+}
 
-    border-radius: 10px;
+.imagem {
+    border: none;
+}
+
+.descricao {
+    background-color: #777777;
+}
+
+#netflix_img {
+    width: 950px;
+
+    background-color: none;
+}
+
+#netflix_img > img{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid white;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+#netflix_des {
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+
+    border: 2px solid white;
 }
 
 img#igerador_1 {
@@ -478,34 +509,6 @@ img#igerador_1 {
     border-radius: 10px;
 
     border: 2px solid black;
-}
-
-section#lista_projetos > div#gerador_de_cartas > p > i{
-    font-size: 30px;
-    padding: 5px;
-}
-
-section#lista_projetos > div#gerador_de_cartas > a{
-    font-size: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-section#lista_projetos2 > div#jogo_da_cobrinha {
-    display: inline-block;
-
-    color: white;
-    background-color: rgb(17, 38, 57);
-    border: 2px solid white;
-
-    position: relative;
-    text-align: center;
-    width: 300px;
-    right: 5%;
-
-    padding: 20px;
-
-    border-radius: 10px;
 }
 
 div#jogo_da_cobrinha > p > i{
@@ -525,36 +528,6 @@ img#i_jc {
     border-radius: 10px;
 
     border: 2px solid black;
-}
-
-section#lista_projetos2 > div#pagina_netflix {
-    display: inline-block;
-
-    color: white;
-    background-color: rgb(17, 38, 57);
-    border: 2px solid white;
-
-    position: relative;
-    text-align: center;
-    width: 300px;
-
-    left: 5%;
-
-    margin-top: 50px;
-    padding: 20px;
-
-    border-radius: 10px;
-}
-
-section#lista_projetos2 > div#pagina_netflix > p > i{
-    font-size: 35px;
-    padding: 5px;
-}
-
-section#lista_projetos2 > div#pagina_netflix > a{
-    font-size: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 img#i_pn {
