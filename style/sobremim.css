@@ -1,0 +1,74 @@
+section#sobre_mim {
+    position: absolute;
+    
+    text-align: center;
+    width: 100%;
+
+    top: 760px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div#sobre_titulo {
+    position: relative;
+    background-color: rgb(17, 38, 57);
+    width: 250px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding-bottom: 37px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-size: 27px;
+    z-index: 1;
+}
+
+hr#linha_1 {
+    position: relative;
+    background-color: white;
+    height: 2px;
+
+    bottom: 100px;
+}
+
+hr#linha_2 {
+    position: relative;
+    background-color: white;
+    height: 2px;
+
+    bottom: 100px;
+}
+
+.linha_p {
+    position: relative;
+    background-color: white;
+
+    height: 1px;
+}
+
+img#i_eu {
+    width: 220px;
+
+    border: 2px solid white;
+    border-radius: 300px;
+
+    margin: 5px;
+    padding: 5px;
+}
+
+div#sobre_descricao {
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    
+    padding: 5px;
+    text-align: justify;
+    
+    font-size: 23px;
+}
+
+div#sobre_descricao > p > a {
+    text-decoration: none;
+}

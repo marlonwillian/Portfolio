@@ -1,0 +1,196 @@
+main#projetos {
+    position: absolute;
+    text-align: center;
+
+    margin-top: 50px;
+    padding-bottom: 50px;
+
+    width: 100%;
+}
+
+div#projetos_titulo {
+    position: relative;
+    background-color: rgb(17, 38, 57);
+    width: 250px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding-bottom: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-size: 27px;
+    z-index: 1;
+}
+
+hr#linha_2 {
+    position: relative;
+    background-color: white;
+    height: 2px;
+
+    bottom: 65px;
+}
+
+section#lista_projetos > div{
+    display: inline-block;
+
+    color: white;
+    vertical-align: top;
+}
+
+section#lista_projetos > div#jogo_da_velha {
+    position: relative;
+    text-align: center;
+    width: 300px;
+    right: 5%;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+section#lista_projetos > div#jogo_da_velha > p > i{
+    font-size: 35px;
+}
+
+section#lista_projetos > div#jogo_da_velha > a{
+    font-size: 25px;
+}
+
+img#i_jv {
+    width: 224px;
+    border-radius: 10px;
+
+    border: 2px solid black;
+}
+
+section#lista_projetos {
+    display: inline-block;
+}
+
+.cartao_projetos {
+    width: 500px;
+    height: 500px;
+
+    margin: 5px;
+    margin-top: 40px;
+}
+
+#netflix_img {
+    width: 930px;
+
+    background-color: none;
+    margin-bottom: 8px;
+
+    border: none;
+}
+
+#netflix_img > img{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid #ff3636;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+#netflix_des {
+    background-color: #000000;
+
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+
+    border: 2px solid #ff3636;
+}
+
+#netflix_texto > h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+#netflix_texto > h1 > span {
+    color: #ff3636;
+}
+
+#netflix_texto > hr {
+    width: 450px;
+    
+    border: 1px solid #ff3636;
+}
+
+#netflix_texto > p {
+    text-align: left;
+    font-size: 23px;
+
+    margin-left: 30px;
+    margin-right: 31px;
+
+    line-height: 1.5;
+}
+
+.netflix-icons {
+    font-size: 50px;
+
+    margin-top: 35px;
+
+    color: white;
+    transition: 0.5s;
+}
+
+#n_site {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#n_github {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#netflix_texto > a {
+    text-decoration: none;
+    
+    color: black;
+    transition: 0.5s;
+}
+
+.netflix-icons:hover, #netflix_texto > a:hover {
+    color: white;
+}
+
+img#igerador_1 {
+    width: 250px;
+    border-radius: 10px;
+
+    border: 2px solid black;
+}
+
+div#jogo_da_cobrinha > p > i{
+    font-size: 35px;
+    padding: 5px;
+}
+
+div#jogo_da_cobrinha > a{
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img#i_jc {
+    width: 260px;
+    height: 390px;
+    border-radius: 10px;
+
+    border: 2px solid black;
+}
+
+img#i_pn {
+    width: 230px;
+    height: 410px;
+    border-radius: 10px;
+
+    border: 2px solid black;
+}
