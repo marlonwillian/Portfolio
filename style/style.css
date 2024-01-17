@@ -2,6 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma;
     color: white;
     background-color: rgb(17, 38, 57);
+    min-width: 500px;
 
     margin: auto;
 }
@@ -12,7 +13,7 @@ header {
     background-color: rgb(17, 38, 57);
 
     width: 100%;
-    height: 45px;
+    height: 55px;
     min-width: 230px;
     z-index: 9;
 }

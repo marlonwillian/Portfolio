@@ -216,14 +216,12 @@ section#lista_projetos {
 
         height: 1150px;
         width: 500px;
-        margin-top: 0px;
+        margin-top: 10px;
 
         border-top-left-radius: 0%;
         border-top-right-radius: 0%;
-        border-bottom-left-radius: 0%;
-        border-bottom-right-radius: 0%;
-
-        border-top: none;
+        border-bottom-left-radius: 1%;
+        border-bottom-right-radius: 1%;
     }
 
     #netflix_img > picture > img {
@@ -231,9 +229,7 @@ section#lista_projetos {
 
         border-top-left-radius: 0%;
         border-top-right-radius: 0%;
-        border-bottom-left-radius: 0%;
-        border-bottom-right-radius: 0%;
-
-        border-top: none;
+        border-bottom-left-radius: 1%;
+        border-bottom-right-radius: 1%;
     }
 }

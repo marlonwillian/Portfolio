@@ -3,10 +3,9 @@ section#sobre_mim {
     
     text-align: center;
     width: 100%;
+    min-width: 500px;
 
     top: 760px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 div#sobre_titulo {
@@ -60,8 +59,6 @@ img#i_eu {
 
 div#sobre_descricao {
     margin-top: 30px;
-    margin-left: 300px;
-    margin-right: 300px;
     
     padding: 5px;
     text-align: justify;
@@ -71,4 +68,18 @@ div#sobre_descricao {
 
 div#sobre_descricao > p > a {
     text-decoration: none;
+}
+
+@media (min-width: 1030px) {
+    #sobre_descricao {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+@media (max-width: 1030px) {
+    #sobre_descricao {
+        margin-left: none;
+        margin-right: none;
+    }
 }
