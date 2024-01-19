@@ -18,6 +18,11 @@ header {
     z-index: 9;
 }
 
+@font-face {
+    font-family: Raleway;
+    src: url(../font/TTF/Raleway-LightItalic.ttf);
+}
+
 header > nav#modo{
     position: fixed;
     text-align: left;
@@ -211,13 +216,15 @@ div#subtitulo {
     white-space: nowrap;
 
     font-size: 110%;
+    font-family: Raleway;
 }
 
 div#nome {
     position: relative;
     white-space: nowrap;
 
-    font-size: 210%;
+    font-size: 250%;
+    font-family: Raleway;
 }
 
 div#tecnologias {
