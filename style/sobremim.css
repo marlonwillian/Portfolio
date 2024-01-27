@@ -50,10 +50,10 @@ hr#linha_2 {
 }
 
 img#i_eu {
-    width: 220px;
+    width: 230px;
 
     border: 2px solid white;
-    border-radius: 300px;
+    border-radius: 50px;
 
     margin: 5px;
     padding: 5px;
