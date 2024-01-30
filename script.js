@@ -263,3 +263,11 @@ function modoEscuro() {
 function esconde_menu () {
     menu_mobile.style.display = "none"
 }
+
+window.onscroll = function () {
+    if (window.scrollY > 0) {
+        header.style.boxShadow = "5px 3px 8px #00000080"
+    } else {
+        header.style.boxShadow = "none"
+    }
+};

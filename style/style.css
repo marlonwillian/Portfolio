@@ -10,11 +10,15 @@ body {
 header {
     position: fixed;
     margin: auto;
-    background-color: #112639e9;
+
+    background-color: #112639;
 
     width: 100%;
     height: 60px;
     min-width: 230px;
+
+    transition: box-shadow 0.5s ease;
+
     z-index: 9;
 }
 
@@ -47,20 +51,20 @@ nav#modo > a#escuro {
     padding: 10px;
     border-radius: 10px;
 
-    color: rgb(17, 38, 57);
+    color: #112639;
 
     transition-duration: 0.7s;
     transition-timing-function: ease-in-out;
 }
 
 nav#modo > a#claro:hover {
-    color: rgb(17, 38, 57);
+    color: #112639;
     background-color: white;
 }
 
 nav#modo > a#escuro:hover {
     color: white;
-    background-color: rgb(17, 38, 57);
+    background-color: #112639;
 }
 
 header > nav#menu {
@@ -79,7 +83,7 @@ header > nav#menu {
 }
 
 header > nav#menu_mobile {
-    background-color: rgb(17, 38, 57);
+    background-color: #112639;
     width: 100%;
 
     display: none;
@@ -185,14 +189,14 @@ nav#e_redes_sociais > a {
 
 nav#menu > a:hover {
     text-decoration: overline;
-    text-decoration-color: rgb(94, 108, 125);
+    text-decoration-color: #5e6c7d;
     
     margin: 10px;
 }
 
 nav#menu_mobile > a:hover {
     text-decoration: overline;
-    text-decoration-color: rgb(94, 108, 125);
+    text-decoration-color: #5e6c7d;
     
     margin: 10px;
 }

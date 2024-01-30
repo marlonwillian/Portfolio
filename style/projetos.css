@@ -66,16 +66,22 @@ hr#linha_2 {
 /* Projeto Netflix */
 
 section#netflix > div{
-    margin: 5px;
+    margin: -3px;
 }
 
 #netflix_img {
     width: 900px;
 
-    background-color: none;
-    margin-bottom: 8px;
+    border-top-right-radius: 1.5%;
+    border-bottom-right-radius: 1.5%;
 
-    border: none;
+    background-color: #141414;
+
+    margin-bottom: 8px;
+    padding: 5px 2px 5px 2px;
+
+    box-shadow: 1px 0px 10px 3px #7c0101a5;
+    clip-path: inset(-10px -10px -10px 0px);
 }
 
 #netflix_img > picture > img{
@@ -83,19 +89,17 @@ section#netflix > div{
 
     width: 98%;
     height: 100%;
-
-    border: 2px solid #ff3636;
-    border-top-right-radius: 5%;
-    border-bottom-right-radius: 5%;
 }
 
 #netflix_des {
-    background-color: #000000;
+    background-color: #141414;
 
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
 
-    border: 2px solid #ff3636;
+    padding: 5px 2px 5px 2px;
+
+    box-shadow: 1px 0px 10px 3px #7c0101a5;
 }
 
 #netflix_texto > h1 {
@@ -125,7 +129,7 @@ section#netflix > div{
     font-size: 18px;
     text-decoration: none;
     
-    color: black;
+    color: #141414;
     transition: 0.5s;
 }
 
@@ -160,8 +164,8 @@ section#netflix > div{
     height: 100%;
 
     border: 2px solid #ffe69b;
-    border-top-right-radius: 5%;
-    border-bottom-right-radius: 5%;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 1%;
 }
 
 #cartas_des {
@@ -295,8 +299,8 @@ section#netflix > div{
     #netflix_img {
         width: 800px;
         background-color: #141414;
-        border-top-right-radius: 5%;
-        border-bottom-right-radius: 5%;
+        /* border-top-right-radius: 5%;
+        border-bottom-right-radius: 5%; */
     }
 
     #netflix_img > picture > img{
@@ -385,7 +389,6 @@ section#netflix > div{
 @media (max-width: 1195px) {
     #netflix_img {
         width: 600px;
-        background-color: #000000;
     }
 
     #netflix_img > picture > img {
