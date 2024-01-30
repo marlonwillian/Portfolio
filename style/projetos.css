@@ -66,7 +66,7 @@ hr#linha_2 {
 /* Projeto Netflix */
 
 section#netflix > div{
-    margin: -3px;
+    margin: -2.5px;
 }
 
 #netflix_img {
@@ -148,32 +148,37 @@ section#netflix > div{
 }
 
 #cartas > div {
-    margin: 2px;
+    margin: -2.4px;
 }
 
 #cartas_img {
     width: 900px;
 
     margin-bottom: 8px;
+    padding: 5px 2px 5px 2px;
+    
+    background-color: #101116;
+    box-shadow: 1px 0px 10px 3px #ffe69b35;
+    clip-path: inset(-10px -10px -10px 0px);
 
-    border: none;
+    border-top-right-radius: 1.5%;
+    border-bottom-right-radius: 1.5%;
 }
 
 #cartas_img > picture > img{
     width: 98%;
     height: 100%;
-
-    border: 2px solid #ffe69b;
-    border-top-right-radius: 1%;
-    border-bottom-right-radius: 1%;
 }
 
 #cartas_des {
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
-    border: 2px solid #ffe69b;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
 
+    padding: 5px 2px 5px 2px;
     background-color: #101116;
+
+    box-shadow: 1px 0px 10px 3px #ffe69b35;
+    clip-path: inset(-10px 0px -10px -10px);
 }
 
 #cartas_texto > h1 {
@@ -222,15 +227,21 @@ section#netflix > div{
 }
 
 #cobra > div {
-    margin: 2px;
+    margin: -2.5px;
 }
 
 #cobra_img {
     width: 900px;
-
     margin-bottom: 8px;
+    background-color: black;
+    padding: 5px 2px 5px 2px;
 
-    border: none;
+    border-top-right-radius: 1.5%;
+    border-bottom-right-radius: 1.5%;
+
+    box-shadow: 1px 0px 10px 3px #add8e65c;
+    clip-path: inset(-10px -10px -10px 0px);
+
 }
 
 #cobra_img > picture > img{
@@ -238,19 +249,18 @@ section#netflix > div{
     height: 100%;
     object-fit: contain;
 
-    border: 2px solid #add8e6;
-    border-top-right-radius: 5%;
-    border-bottom-right-radius: 5%;
-
     background-color: black;
 }
 
 #cobra_des {
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
-    border: 2px solid #add8e6;
-
     background-color: black;
+    padding: 5px 2px 5px 2px;
+
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+
+    box-shadow: 1px 0px 10px 3px #add8e65c;
+    clip-path: inset(-10px 0px -10px -10px);
 }
 
 #cobra_texto > h1 {
@@ -289,7 +299,7 @@ section#netflix > div{
     font-size: 50px;
 }
 
-.icons:hover, #cobra_texto > a:hover {
+#cobra_texto > a:hover {
     color: white;
 }
 
@@ -299,24 +309,15 @@ section#netflix > div{
     #netflix_img {
         width: 800px;
         background-color: #141414;
-        /* border-top-right-radius: 5%;
-        border-bottom-right-radius: 5%; */
     }
 
     #netflix_img > picture > img{
         width: 100%;
     }
 
-    #cartas > div {
-        margin: 6px;
-    }
-
     #cartas_img {
         width: 800px;
         background-color: #101116;
-        
-        border-top-right-radius: 5%;
-        border-bottom-right-radius: 5%;
     }
 
     #cartas_img > picture > img{
@@ -325,16 +326,8 @@ section#netflix > div{
         width: 100%;
     }
 
-    #cobra > div {
-        margin: 6px;
-    }
-
     #cobra_img {
         width: 800px;
-        background-color: #101116;
-        
-        border-top-right-radius: 5%;
-        border-bottom-right-radius: 5%;
     }
 
     #cobra_img > picture > img{
@@ -448,10 +441,6 @@ section#netflix > div{
 }
 
 @media (max-width: 1003px) {
-    .cartao_projetos {
-        margin: 0px;
-    }
-
     #netflix_des {
         border-top-left-radius: 2%;
         border-top-right-radius: 2%;
@@ -467,12 +456,13 @@ section#netflix > div{
 
         height: 1150px;
         width: 500px;
-        margin-top: 10px;
 
         border-top-left-radius: 0%;
         border-top-right-radius: 0%;
         border-bottom-left-radius: 1%;
         border-bottom-right-radius: 1%;
+
+        clip-path: inset( 0px -10px -10px -10px);
     }
 
     #netflix_img > picture > img {
@@ -483,6 +473,10 @@ section#netflix > div{
         border-bottom-left-radius: 1%;
         border-bottom-right-radius: 1%;
     }
+    
+    #cartas > div {
+        margin-top: 0px;
+    }
 
     #cartas_des {
         border-top-left-radius: 2%;
@@ -490,10 +484,17 @@ section#netflix > div{
         
         border-bottom-left-radius: 0%;
         border-bottom-right-radius: 0%;
+
+        clip-path: inset( -10px -10px 2.4px -10px);
     }
 
     #cartas_texto > a {
         color: white;
+    }
+
+    #cobra_texto > a > i {
+        margin-top: 40px;
+        font-size: 40px;
     }
 
     #cartas_img {
@@ -507,6 +508,8 @@ section#netflix > div{
         border-top-right-radius: 0%;
         border-bottom-left-radius: 1%;
         border-bottom-right-radius: 1%;
+
+        clip-path: inset( 0px -10px -10px -10px);
     }
 
     #cartas_img > picture > img {
@@ -534,6 +537,8 @@ section#netflix > div{
         
         border-bottom-left-radius: 0%;
         border-bottom-right-radius: 0%;
+
+        clip-path: inset( -10px -10px 0px -10px);
     }
 
     #cobra_texto > a {
@@ -551,6 +556,8 @@ section#netflix > div{
         border-top-right-radius: 0%;
         border-bottom-left-radius: 1%;
         border-bottom-right-radius: 1%;
+
+        clip-path: inset( 5px -10px -10px -10px);
     }
 
     #cobra_img > picture > img {
