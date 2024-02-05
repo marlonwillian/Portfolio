@@ -28,10 +28,13 @@ div#projetos_titulo {
 
 hr#linha_2 {
     position: relative;
-    background-color: white;
     height: 2px;
 
     bottom: 65px;
+}
+
+.linhas {
+    background-color: white;
 }
 
 .projetos > div {
