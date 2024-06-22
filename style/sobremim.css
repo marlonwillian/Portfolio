@@ -29,6 +29,7 @@ div#sobre_titulo {
 hr#linha_1 {
     position: relative;
     background-color: white;
+    border: 0px;
     height: 2px;
 
     bottom: 100px;
@@ -37,6 +38,7 @@ hr#linha_1 {
 hr#linha_2 {
     position: relative;
     background-color: white;
+    border: 0px;
     height: 2px;
 
     bottom: 100px;

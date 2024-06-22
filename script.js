@@ -98,20 +98,8 @@ function modoClaro() {
     hr1.style.background = "#112639";
     hr2.style.background = "#112639";
 
-    // jogo_da_velha.style.color = "#112639";
-    // gerador_de_cartas.style.color = "#112639";
-    // jogo_da_cobrinha.style.color = "#112639";
-    // pagina_netflix.style.color = "#112639";
-
-    // // jogo_da_velha.style.borderColor = "#112639";
-    // gerador_de_cartas.style.borderColor = "#112639";
-    // jogo_da_cobrinha.style.borderColor = "#112639";
-    // pagina_netflix.style.borderColor = "#112639";
-
-    // // jogo_da_velha.style.backgroundColor = "#D1D1D1";
-    // gerador_de_cartas.style.backgroundColor = "#D1D1D1";
-    // jogo_da_cobrinha.style.backgroundColor = "#D1D1D1";
-    // pagina_netflix.style.backgroundColor = "#D1D1D1";
+    hr1.style.borderColor = "white";
+    hr2.style.borderColor = "white";
 
     i_eu.style.borderColor = "#112639";
 
@@ -157,28 +145,11 @@ function modoClaro() {
 
     projetos_titulo.style.color = "white"
 
-    hr1.style.background = "#112639";
-    hr2.style.background = "#112639";
+    hr1.style.background = "white";
+    hr2.style.background = "white";
 
-    // jogo_da_velha.style.color = "white"
-    // gerador_de_cartas.style.color = "white"
-
-    // jogo_da_velha.style.borderColor = "white"
-    // gerador_de_cartas.style.borderColor = "white"
-
-    // // jogo_da_velha.style.backgroundColor = "#112639";
-    // gerador_de_cartas.style.backgroundColor = "#112639";
-    
-    // jogo_da_cobrinha.style.color = "white"
-    // pagina_netflix.style.color = "white"
-
-    // jogo_da_cobrinha.style.borderColor = "white"
-    // pagina_netflix.style.borderColor = "white"
-
-    // // jogo_da_velha.style.backgroundColor = "#112639";
-    // gerador_de_cartas.style.backgroundColor = "#112639";
-    // jogo_da_cobrinha.style.backgroundColor = "#112639";
-    // pagina_netflix.style.backgroundColor = "#112639";
+    hr1.style.borderColor = "#112639";
+    hr2.style.borderColor = "#112639";
 
     i_eu.style.borderColor = "#D1D1D1";
 
